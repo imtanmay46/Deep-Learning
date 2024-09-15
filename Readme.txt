@@ -1,8 +1,6 @@
-To install the environment follow following steps.
+1. Designed and implemented custom ResNet, VGG, and Inception architectures, incorporating hybrid blocks for robust image (CIFAR-10) and audio (SpeechCommand V0.02) classification.
 
-1. Install Minconda/Anaconda in your system
-2. Open "Minconda/Anaconda prompt shell" on windows and "terminal" on linux systems.
-3. Run "conda create --name <your env name> --file <path to dla2.txt>"
-4. Modify only Pipeline/changerollno.py
-5. Test experiments by running "python3 main.py T/F" (T for using GPU and F for using CPU)
-6. Write code for saving checkpoints in "trainer" function.
+2. Trained high-performance models using PyTorch’s torchvision and torchaudio libraries, achieving key accuracy benchmarks with Cross-Entropy loss and Adam optimization.
+
+3. Developed a robust pipeline with custom checkpointing for efficient training, evaluation, and reproducibility across complex datasets.
+4. Tech Stack: Python, PyTorch, Tensorflow, Torchaudio, Torchvision, Google Colab
