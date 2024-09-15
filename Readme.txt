@@ -1,4 +1,4 @@
-Optimized Deep Convolutional Architectures for Cross-Domain Classification Tasks
+OPTIMIZED DEEP CONVOLUTIONAL ARCHITECTURES FOR CROSS-DOMAIN CLASSIFICATION TASKS
 
 WORK DESCRIPTION
 
