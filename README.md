@@ -11,29 +11,46 @@ This project focuses on building and optimizing deep convolutional neural networ
 - **Robust Training Pipeline**: Developed a flexible pipeline with custom checkpointing, enabling reproducibility, modular training, and efficient evaluation.
 - **Benchmark-Driven Evaluation**: Models were optimized using **Cross-Entropy Loss** and the **Adam Optimizer**, reaching competitive benchmarks for both image and audio tasks.
 
+## Project Structure
+
+```bash
+.
+├── train.py            # Core logic: dataloading, model definitions, training & validation loops
+├── __init__.py         # Global variable and parameter initialization
+├── main.py             # Entry point of the pipeline; orchestrates training & evaluation
+├── requirements.txt    # Python dependencies
+```
+
+### File Descriptions
+
+- `main.py`: Drives the overall execution. Calls utility functions from `train.py`, sets up configurations, and runs training and evaluation.
+- `train.py`: Implements dataset loading, custom CNNs, training and validation loops, and accuracy tracking.
+- `__init__.py`: Initializes global variables, constants, and hyperparameters.
+- `requirements.txt`: Lists all required packages to replicate the environment.
+
 ## Datasets
 
 - **CIFAR-10**  
-  - 60,000 32×32 color images across 10 classes.
+  - ```60,000``` ```32×32 color images``` across ```10 classes```.
   - Used for evaluating image classification performance.
   - [Link to dataset](https://www.cs.toronto.edu/~kriz/cifar.html)
 
 - **SpeechCommands V0.02**  
-  - Over 100,000 one-second audio clips of 35 spoken words.
+  - Over ```100,000 one-second audio clips``` of ```35 spoken words```.
   - Used for evaluating audio classification robustness.
   - [Link to dataset](https://www.tensorflow.org/datasets/catalog/speech_commands)
 
 ## Technologies & Concepts
 
-- **Languages**: Python  
-- **Frameworks**: PyTorch, TensorFlow  
-- **Libraries**: Torchaudio, Torchvision, NumPy, Matplotlib  
-- **Development**: Jupyter Notebooks, Google Colab  
+- **Languages**: ```Python```  
+- **Frameworks**: ```PyTorch```, ```TensorFlow```  
+- **Libraries**: ```Torchaudio```, ```Torchvision```, ```NumPy```, ```Matplotlib```  
+- **Development**: ```Jupyter Notebooks```, ```Google Colab```  
 - **Concepts**:  
-  - Deep Learning, CNNs  
-  - Cross-domain learning  
-  - Training pipelines and checkpointing  
-  - State-of-the-Art image/audio classification  
+  - ```Deep Learning```, ```CNNs```  
+  - ```Cross-domain learning```  
+  - ```Training pipelines``` and ```checkpointing```  
+  - ```State-of-the-Art image/audio classification```  
 
 ## Setup Instructions
 
@@ -49,4 +66,10 @@ This project focuses on building and optimizing deep convolutional neural networ
    ```
 
 3. **Download Datasets**
-   - Follow the dataset links above to download and place them in a data/ directory or update the paths in the notebook.
+   Although the ```train.py``` file handles everything, including the loading of the dataset, but if facing any issues:
+   - Download ```CIFAR-10``` and ```SpeechCommands V0.02``` using the links above and do the necessary changes ```train.py```.
+  
+4. Run the Training Pipeline
+   ```bash
+   python main.py
+   ```
