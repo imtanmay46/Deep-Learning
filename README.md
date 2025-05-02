@@ -66,10 +66,11 @@ This project focuses on building and optimizing deep convolutional neural networ
    ```
 
 3. **Download Datasets**
+
    Although the ```train.py``` file handles everything, including the loading of the dataset, but if facing any issues:
    - Download ```CIFAR-10``` and ```SpeechCommands V0.02``` using the links above and do the necessary changes ```train.py```.
   
-4. Run the Training Pipeline
+5. Run the Training Pipeline
    ```bash
    python main.py
    ```
